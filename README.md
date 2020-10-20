@@ -20,15 +20,15 @@ Service that consults the API to get all the owners, owners by DNI, save owners 
 
 Was added two new methods, used to get the owners and provide the list to select a new owner.
 
-## car-list component
+### car-list component
 
 This component was restructured to obtain the owners and the cars to list in the page and with the use of `giveName` and `searchOwner` to show the name of the owner instead of DNI
 
-## owner-edit component
+### owner-edit component
 
 This component is responsible for manage the changes in the list of owners. Receives an id to select an especific owner to edit some feature or delete from the list. 
 
-## owner-list component
+### owner-list component
 
 This component is similar to `car-list component` because basically list all owners, in this case, this component allows to select and delete more than one owner simultaneously, for this was created one method to save the selected owners and another to remove that selected owners
 
