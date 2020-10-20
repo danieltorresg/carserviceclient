@@ -51,10 +51,6 @@ export class OwnerEditComponent implements OnInit, OnDestroy {
     this.ownerService.save(form).subscribe(result => {
       this.gotoList();
     }, error => console.error(error, 'Hola'));
-    
-    /* this.ownerService.save(form).subscribe(result => {
-      this.gotoList();
-    }, error => console.error(error)); */
   }
 
   remove(href) {

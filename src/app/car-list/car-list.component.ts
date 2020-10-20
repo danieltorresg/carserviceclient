@@ -31,14 +31,6 @@ export class CarListComponent implements OnInit {
     });
   }
 
-  getOwners() {
-    this.ownerService.getAll().subscribe(data => {
-      this.owners = data['_embedded']['owners'];
-      console.log(this.owners);
-    });
-
-  }
-
   giveName() {
     for (const car of this.cars) {
       this.giphyService.get(car.name).subscribe(url => car.giphyUrl = url);
